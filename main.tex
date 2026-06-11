@@ -1,0 +1,242 @@
+\documentclass[12pt,a4paper]{report}
+\input{setting/setting}
+\addbibresource{setting/ref.bib}
+% To simplify your workload, you can separate references into three individual bib files and organize tables and figures in dedicated folders for each project.
+
+
+\begin{document}
+
+
+% --------------------------
+% Cover Page
+% --------------------------
+
+\thispagestyle{empty} % no page number
+
+\begin{center}
+\setstretch{2}
+% 1. CUHK(SZ) Logo
+\includegraphics[width=1.0\textwidth]{setting/figure/CUSZ-01logo-CMYK.png}
+\\\vspace{60pt}
+% 2. Thesis Title
+{\centering\fontspec{Arial}\fontsize{20}{24}\bfseries
+    This is your title
+}\\\vspace{60pt}
+% 3. Student Name
+{\centering\fontspec{Arial}\fontsize{14}{16}\selectfont
+    Hua Li
+}\\\vspace{24pt}
+{\centering\heiti\fontsize{14}{16}\selectfont 
+    李华
+}\\\vspace{24pt}
+% 4. Degree & Programme
+{\centering\fontspec{Arial}\fontsize{14}{16}\selectfont 
+    A Thesis Submitted in Partial Fulfillment \\
+    of the Requirements for the Degree of\\
+    Doctor of Philosophy\\
+    in\\
+    \bfseries Finance
+}\\\vspace{60pt}
+% 5. University Name
+{\centering\fontspec{Arial}\fontsize{14}{16}\bfseries
+    The Chinese University of Hong Kong, Shenzhen
+}\\\vspace{24pt}
+% 6. Submission Date
+{\centering\fontspec{Arial}\fontsize{14}{16}
+    June 2026
+}
+\end{center}
+
+
+
+
+
+% --------------------------
+% Thesis Assessment Committee
+% --------------------------
+
+\clearpage
+\pagenumbering{roman}
+\chapter*{Thesis assessment committee}
+\addcontentsline{toc}{chapter}{Thesis assessment committee}
+{\noindent
+Professor A (Chair)\\
+Professor B (Supervisor)\\
+Professor C (Member)\\
+Professor D (CUHK Examiner)\\
+Professor E (External Examiner)
+}
+
+
+
+
+
+% --------------------------
+% Abstract
+% --------------------------
+
+\clearpage
+% heading
+{\noindent 
+Abstract of thesis entitled \linefill{This is your title} \\
+Submitted by \linefill{Hua Li} \\
+For the degree of \linefill{Doctor of Philosophy in Finance} \\
+at The Chinese University of Hong Kong, Shenzhen (June 2026) \\
+}
+{
+\makeatletter
+\renewcommand{\clearpage}{} 
+\renewcommand{\cleardoublepage}{}
+\makeatother
+% Do not delete the following empty line!
+
+% abstract
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\lipsum[1]
+
+}
+
+
+
+
+
+% --------------------------
+% 摘要
+% --------------------------
+
+\clearpage
+% heading
+{\noindent 
+    香港中文大学深圳学位论文标题：\linefill{这是你的标题}\\
+}
+{
+\makeatletter
+\renewcommand{\clearpage}{} 
+\renewcommand{\cleardoublepage}{}
+\makeatother
+% Do not delete the following empty line!
+
+% abstract
+\chapter*{摘要}
+\addcontentsline{toc}{chapter}{摘要}
+
+\lipsum[1]
+
+}
+
+
+
+
+
+
+% --------------------------
+% Acknowledgements
+% --------------------------
+
+\clearpage
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+\lipsum[1]
+
+
+% --------------------------
+% Table of contents
+% --------------------------
+
+\clearpage
+\chapter*{Table of contents}
+\tableofcontents
+\addcontentsline{toc}{chapter}{Table of contents}
+
+
+
+
+
+% --------------------------
+% List of Figures and Tables
+% --------------------------
+\clearpage
+\chapter*{List of figures and tables}
+\addcontentsline{toc}{chapter}{List of figures and tables}
+\listoffigures
+\listoftables
+
+
+
+
+
+% --------------------------
+% Text
+% --------------------------
+
+\cleardoublepage
+\pagenumbering{arabic} % 正文开始用阿拉伯数字页码
+
+
+\chapter{Introduction}
+
+\lipsum[1]
+
+\citet{famaCrossSectionExpectedStock1992}
+
+
+
+\chapter{Manuscript 1}\label{chapter1}
+
+\lipsum[1]
+
+
+
+\chapter{Manuscript 2}\label{chapter2}
+
+\lipsum[1]
+
+
+
+\chapter{Manuscript 3}\label{chapter3}
+
+\lipsum[1]
+
+
+
+
+% --------------------------
+% Appendix
+% --------------------------
+\clearpage
+\renewcommand{\appendixname}{Appendix~\Alph{section}}
+\renewcommand{\thefigure}{\thechapter{}\arabic{figure}}
+\renewcommand{\thetable}{\thechapter{}\arabic{table}}
+\appendix
+
+
+
+\chapter{Appendix 1}
+
+\lipsum[1]
+
+
+
+\chapter{Appendix 2}
+
+\lipsum[1]
+
+
+
+% --------------------------
+% Bibliography
+% --------------------------
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography[title={Bibliography}]
+
+
+
+% \includepdf[]{./Thesis and Dissertation Authorization-from Foster-20190524.pdf}
+
+
+
+\end{document}
