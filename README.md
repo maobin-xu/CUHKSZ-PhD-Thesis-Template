@@ -8,3 +8,4 @@ Below is an overview of the core file structure:
 - `setting/ref.bib`: BibTeX database containing all reference citation entries.
 - `setting/figure/`: Stores the university logo.
 
+You may check `main.pdf` to access the final compiled document.
