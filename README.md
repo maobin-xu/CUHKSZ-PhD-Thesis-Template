@@ -1,6 +1,6 @@
 # CUHKSZ PhD Thesis Template
 
-You may use this template on **Overleaf** to typeset your doctoral dissertation.
+You may use this template on **Overleaf** to typeset your doctoral dissertation. Be sure to select the **XeLaTeX** compiler.
 
 Below is an overview of the core file structure:
 - `main.tex`: Root master TeX file that compiles the complete dissertation.
